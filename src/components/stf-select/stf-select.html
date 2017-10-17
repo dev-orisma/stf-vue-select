@@ -2,7 +2,7 @@
     :class="{ 'stf-select_has-value': value !== null && value !== undefined ? true : false, 'stf-select_opened': isOpened, 'stf-select_empty': !options || !options.length}"
     @keydown="keyDown" 
     @keypress="keyPress" 
-    @click.stop="open"
+    @click.stop="openClose"
     @unblur="onUnblur"
     class="stf-select stf-select_sm">
     <div class="stf-select__container">
